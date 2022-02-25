@@ -5,23 +5,18 @@ date: "11/18/2021"
 output: html_document
 dataset:
   citation:
-      title: "Social Data Commons: your title here"
+      title: "Social Data Commons: Health, Behavior, Diet: Modified Retail Food Environment Index"
       subtitle: ""
-      dsDescriptionValue: "Virginia Standards of Learning Test Scores collected by the Virginia Department of Education (VDOE)"
+      dsDescriptionValue: "Modified Retail Food Environment Index calculated from OpenStreetMap data"
       subject: "Social Sciences (Ex: Education, Politics, Sociology, Economics, Psychology)"
-      productionDate: "2021-11-17"
-      timePeriodCoveredStart: "2015-01-01"
-      timePeriodCoveredEnd: "2021-01-01"
+      productionDate: "2022-01-19"
+      timePeriodCoveredStart: "2022-01-19"
+      timePeriodCoveredEnd: "2022-01-19"
       dataSources:
-        - "ACS"
-        - "County Health Rankings"
+        - "Open Street Map"
       author:
-        - authorName: "Schroeder, Aaron"
+        - authorName: "Schroeder, Joanna"
           authorAffiliation: "Univeristy of Virginia"
-        - authorName: "Charankevich, Hanna"
-          authorAffiliation: "Univeristy of Virginia"
-        - authorName: "Niagra, Bob"
-          authorAffiliation: "Univeristy of Waterloo"
       datasetContact:
         - datasetContactEmail: "ads7fg@virginia.edu"
           datasetContactName: "Schroeder, Aaron"
@@ -29,9 +24,10 @@ dataset:
     geographicCoverage:
       country: "United States"
       state: "Virginia"
+      county: "Arlington"
     geographicUnit:
-      - "State Health District"
-      - "County"
+      - "Civic Association"
+      - "Census Tract"
 ---
 
 ```{r setup, include=FALSE}
