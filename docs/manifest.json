@@ -1,0 +1,27 @@
+{
+  "name": "dc.osm.food",
+  "data": [
+    {
+      "name": "mrfei",
+      "variables": "mrfei",
+      "file": "va013_catr_sdad_2022_mrfei.csv.xz",
+      "size": 1872,
+      "md5": "35136c02bde5ead6933326578308cc63"
+    }
+  ],
+  "distributions": {
+    "dataverse": {
+      "id": 55958,
+      "doi": "doi:10.18130/V3/FIK2IF",
+      "server": "https://dataverse.lib.virginia.edu/",
+      "data": [
+        {
+          "file": "va013_catr_sdad_2022_mrfei.csv.xz",
+          "id": 55963,
+          "size": 1872,
+          "md5": "35136c02bde5ead6933326578308cc63"
+        }
+      ]
+    }
+  }
+}

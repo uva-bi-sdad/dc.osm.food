@@ -6,7 +6,7 @@
 \alias{dc.osm.food-package}
 \title{dc.osm.food: Social Data Commons: Health, Behavior, Diet: Modified Retail Food Environment Index}
 \description{
-Allows user to easily get retail food environment index data from the SDAD Data Commons.  Data can be provided directly or in a file.
+Allows user to easily get retail food environment index data from the SDAD Data Commons. Data can be provided directly or in a file.
 }
 \author{
 \strong{Maintainer}: Joanna Schroeder \email{js2mr@virginia.edu}
