@@ -57,6 +57,20 @@ readr::write_csv(get(all_geos_file_name),
                  xzfile(dat_file_path, compression = 9))
 ```
 
+## Change neighborhood names
+
+```{r}
+map <- jsonlite::read_json("https://raw.githubusercontent.com/uva-bi-sdad/dc.geographies/main/data/va013_geo_arl_2021_civic_associations/distribution/va013_geo_arl_2021_civic_associations.geojson")
+name_map <- unlist(lapply(map$features, function(e)
+  structure(e$properties$geoid, names = e$properties$region_name)))
+data <- read.csv(gzfile("data/va013_catr_sdad_2022_mrfei.csv.xz"))
+data[data$region_name == "Chain Bridge Forest, Bridge, Forest", "region_name"] <- "Chain Bridge Forest"
+su <- data$region_name %in% names(name_map)
+data[su, "geoid"] <- name_map[data[su, "region_name"]]
+data[su, "region_type"] <- "neighborhood"
+write.csv(data, xzfile("data/va013_catr_sdad_2022_mrfei.csv.xz"), row.names = FALSE)
+```
+
 ## Upload Files to Dataverse Dataset
 
 ```{r upload}
